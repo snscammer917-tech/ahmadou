@@ -348,4 +348,78 @@
     </footer>
 
 </body>
+<style>
+    /* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    /* Photo plus petite sur téléphone */
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    /* Texte animé (évite le débordement) */
+    .typing {
+        font-size: 1rem;
+        white-space: normal;      /* autorise retour à la ligne */
+        border-right: none;       /* enlève le curseur sur mobile */
+        width: 100%;
+        animation: none;          /* stop animation si trop long */
+    }
+
+    /* Sections */
+    section {
+        padding: 60px 20px;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+    }
+
+    .about {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Projets */
+    .projects {
+        grid-template-columns: 1fr; /* 1 carte par ligne */
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    /* Bouton */
+    .btn {
+        padding: 10px 28px;
+        font-size: 0.95rem;
+    }
+
+    /* WhatsApp bouton */
+    .whatsapp-btn {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-icon {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+</style>
 </html>
