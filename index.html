@@ -248,6 +248,92 @@
         </div>
     </div>
 </section>
+<!-- SKILLS -->
+<section id="skills">
+    <div class="title">
+        <h2>Mes Compétences</h2>
+    </div>
+    <div class="skills-container">
+        <div class="skill">
+            <div class="skill-header">
+                <span>HTML / CSS</span>
+                <span>90%</span>
+            </div>
+            <div class="progress"><div class="bar" data-width="90%"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-header">
+                <span>PHP</span>
+                <span>75%</span>
+            </div>
+            <div class="progress"><div class="bar" data-width="75%"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-header">
+                <span>Réseaux & Systèmes</span>
+                <span>85%</span>
+            </div>
+            <div class="progress"><div class="bar" data-width="85%"></div></div>
+        </div>
+    </div>
+</section>
+
+<style>
+.skills-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2575fc;
+}
+
+.progress {
+    background: #ddd;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    width: 0;
+    border-radius: 10px;
+    transition: width 2s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skill-header {
+        font-size: 1rem;
+    }
+
+    .progress {
+        height: 10px;
+    }
+}
+</style>
+
+<script>
+// Remplir les barres au chargement
+document.addEventListener('DOMContentLoaded', () => {
+    const bars = document.querySelectorAll('.bar');
+    bars.forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        bar.style.width = width;
+    });
+});
+</script>
+
 
 <!-- SECTION CV -->
 <section id="cv">
@@ -262,7 +348,7 @@
                 en réseaux, systèmes et développement web.
             </p>
 
-            <a href="CV de Bamba Ndiaye (1).pdf" download class="btn-cv">
+            <a href="CV.pdf" download class="btn-cv">
                 📄 Télécharger mon CV
             </a>
         </div>
